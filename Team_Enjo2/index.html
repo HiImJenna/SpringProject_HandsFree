@@ -30,14 +30,27 @@
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#about us">About us</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#price">가격</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#guide">이용가이드</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#">로그인</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#">Korean</a></li>
-                    </ul>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#guide">FAQ</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#">Korean</a></li> -->
+                        <select class = "language" name="language" id="language">
+                            <option value="Korean">Korean</option>
+                            <option value="English">English</option>
+                          </select>
+                        <!-- <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Korean
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">English</a></li>
+                            </ul>
+                          </div> -->
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">메세지 보내기</span>
+                            <span class="small">로그인</span>
+                        </span>
+                    </button>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <span class="small">회원가입</span>
                         </span>
                     </button>
                 </div>
@@ -50,8 +63,16 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Hands free와 함께하는 <br>가벼운 여행의 시작</h1>
-                            <p class="lead fw-normal text-muted mb-5">어디로 가시나요? | 맡기는 날 12:00 / 찾는 날 13:00 <br> 짐 1개</p>
+                            <h1 class="display-1 lh-1 mb-3">Hands free와 함께하는 <br>가벼운 여행의 시작</h1> <br> 
+
+                            <p class="lead fw-normal text-muted mb-5">
+                                <i class="bi bi-geo-alt-fill"></i> &nbsp <input type="text" value="어디로 가시나요?"><br><br> 
+                                <i class="bi bi-calendar3"></i> &nbsp
+                                <input type="text" class="datebutton" name="dropDate" id="dropDate" value = "맡기는 날" readonly/>
+                                <input type="text" class="datebutton" name="pickupDate" id="pickupDate" value = "찾는 날" readonly/> <br><br>
+                                <i class="bi bi-handbag"></i> &nbsp 짐 1개
+
+                            </p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                                 <button class="custom-btn btn-1">검색하기</button>
                             </div>
@@ -135,22 +156,48 @@
             </div>
         </section>
 
-        <!-- 이용가이드, FAQ -->
+        <!-- 이용가이드, FAQ
         <section class="bg-light" id = "guide">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
+                    
                         <h2 class="display-4 lh-1 mb-4">이용가이드, FAQ</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0"></p>
-                    </div>
-                    <!-- <div class="col-sm-8 col-md-6">
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0"></p> 
+                        <h3 style="color: rgb(59, 59, 59);">Q. 영남님은 어떻게 그렇게 코딩을 잘 하시나요?</h3>
+                        <h4 style="color: rgb(106, 106, 106);">A. No one knows</h4>
+
+                        <h3 style="color: rgb(59, 59, 59);">Q. 현중님은 어떻게 그렇게 코딩을 잘 하시나요?</h3><br>
+                        <h4 style="color: rgb(106, 106, 106);">A. No one knows</h4><br>
+
+                        <h3 class="font-alt">Q. 승복님은 어떻게 그렇게 코딩을 잘 하시나요?</h3><br>
+                        <h4 style="color: rgb(106, 106, 106);">A. No one knows</h4><br>
+
+                        <h3 class="font-alt">Q. 교수님은 어떻게 그렇게 코딩을 잘 하시나요?</h3><br>
+                        <h4 style="color: rgb(106, 106, 106);">A. No one knows</h4><br>
+
+                        
+                    
+                    <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
-                    </div> -->
+                    </div>
                     
                 </div>
             </div>
-        </section>
+        </section> -->
 
+        <!-- 이용가이드 FAQ -->
+        <section class="cta">
+            <div class="cta-content">
+                <div class="container px-5">
+                    <h1 class="text-white display-1 lh-1 mb-4">이용가이드</h1>
+                    <h3 style="color: white;">Q.회원가입은 어떻게 하나요?</h3> <h4 style="color: white;">A. 버튼을 누르세요.</h4>
+                    <h3 style="color: white;">Q.회원가입은 어떻게 하나요?</h3> <h4 style="color: white;">A. 버튼을 누르세요.</h4>
+                    <h3 style="color: white;">Q.회원가입은 어떻게 하나요?</h3> <h4 style="color: white;">A. 버튼을 누르세요.</h4>
+
+                    <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a> -->
+                </div>
+            </div>
+        </section>
         
         <!-- Footer-->
         <footer class="bg-black text-center py-5">

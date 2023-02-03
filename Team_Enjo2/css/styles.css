@@ -3031,8 +3031,9 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #2937f0;
-  border-color: #2937f0;
+  background-color: #3b47f5;
+  border-color: #3b47f5;
+  margin-right: 10px;
 }
 .btn-primary:hover {
   color: #fff;
@@ -11657,6 +11658,13 @@ footer a:hover, footer a:active, footer a:focus {
   border: none;
 }
 .btn-1:hover {
-   background: rgb(0,3,255);
-background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+  background: rgb(0,3,255);
+  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+
+.language {
+  border: #fff;
+  margin-right: 10px;
+  
 }
